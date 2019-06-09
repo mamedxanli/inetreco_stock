@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    <title>Main Page | Asset Manager</title>
+{% endblock %}
+
+{% block main %}
+    <div class="wrapper wrapper-content">
+
+        <div class="row">
+            <div class="col-lg-offset-2 col-lg-8">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>Network devices</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="row">
+                            <div class="col-xs-7 content">
+                                <h1 class="no-margins text-navy">{{ netdevs_active.count }}</h1>
+                                <i class="fa fa-level-up font-bold text-navy"></i>
+                                <small>Active devices</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-offset-2 col-lg-8">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>Servers</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="row">
+                            <div class="col-xs-7 content">
+                                <h1 class="no-margins text-navy">{{ servers_active.count }}</h1>
+                                <i class="fa fa-level-up font-bold text-navy"></i>
+                                <small>Active servers</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,31 @@
+{% load staticfiles %}
+<nav class="navbar-default navbar-static-side " role="navigation">
+    <div class="sidebar-collapse">
+        <ul class="nav metismenu sticky-top" id="side-menu" style="">
+            <li class="nav-header">
+                <div class="dropdown profile-element"> <span>
+                    <img alt="image" class="img" src="{% static 'inetreco_logo.logo' %}">
+                        </span>
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                </div>
+                <div class="logo-element">
+                    <img alt="image" class="img" src="{% static 'inetreco_logo.logo' %}">
+                </div>
+            </li>
+            <li>
+                <a href="{% url 'haystack_search' %}"><i class="fa fa-search"></i> <span class="nav-label">Search</span></a>
+            </li>
+            <li class="active">
+            <li>
+                <a href="#"><i class="fa fa-sitemap"></i> <span class="nav-label">Cisco</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="{% url 'router_list' %}">Router</a></li>
+                    <li><a href="{% url 'switch_list' %}">Switch</a></li>
+                    <li><a href="{% url 'firewall_list' %}">Firewall</a></li>
+                    <li><a href="{% url 'other_list' %}">Other</a></li>
+                </ul>
+            </li>
+     
+        </ul>
+    </div>
+</nav>
