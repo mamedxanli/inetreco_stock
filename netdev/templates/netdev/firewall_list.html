@@ -21,7 +21,6 @@
                                 <tr>
                                     <th>Device Type</th>
                                     <th>Brand</th>
-                                    <th>OS</th>
                                     <th>Model</th>
                                     <th>Port Number</th>
                                     <th>Port Description</th>
@@ -34,11 +33,15 @@
                                 <tr class="row-cursor" title="Click to view this network device">
                                     <td><a href="{{ netdev.get_detail }}">{{ netdev.device_type }}</a></td>
                                     <td>{{ netdev.brand }}</td>
-                                    <td>{{ netdev.os }}</td>
                                     <td>{{ netdev.netdev_model }}</td>
                                     <td>{{ netdev.port_number }}</td>
                                     <td>{{ netdev.port_description }}</td>
-                                    <td>{{ netdev.file_picture_1 }}</td>
+                                    {% if netdev.file_picture_1 %}
+                                    <td>
+                                     <a href="{{ netdev.file_picture_1.url }}" download><img src='{{ netdev.file_picture_1.url}}' height='75' width='75' border='1'/></a>
+                                    </td>
+                                    {% endif %}
+
                                 </tr>
                                 {% endfor %}
                             </tbody>
