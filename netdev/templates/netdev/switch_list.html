@@ -31,7 +31,7 @@
                             <tbody>
                                 {% for netdev in object_list %}
                                 <tr class="row-cursor" title="Click to view this network device">
-                                    <td><a href="{{ netdev.get_detail }}">{{ netdev.device_type }}</a></td>
+                                    <td><a href="{{ netdev.get_detail }}">{{ netdev }}</a></td>
                                     <td>{{ netdev.brand }}</td>
                                     <td>{{ netdev.netdev_model }}</td>
                                     <td>{{ netdev.port_number }}</td>
