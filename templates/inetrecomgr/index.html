@@ -17,24 +17,16 @@
                     <div class="ibox-content">
                         <div class="row">
                             <div class="col-xs-7 content">
-                                <h1 class="no-margins text-navy">{{ router_list.count }}</h1>
-                                <i class="fa fa-level-up font-bold text-navy"></i>
-                                <small>Router devices</small>
+                        	<li><a href="{% url 'router_list' %}">Router devices</a></li>		
                             </div>
                          <div class="col-xs-7 content">
-                                <h1 class="no-margins text-navy">{{ router_list.count }}</h1>
-                                <i class="fa fa-level-up font-bold text-navy"></i>
-                                <small>Firewall devices</small>
+                        	<li><a href="{% url 'firewall_list' %}">Firewall devices</a></li>		
                             </div>
                          <div class="col-xs-7 content">
-                                <h1 class="no-margins text-navy">{{ router_list.count }}</h1>
-                                <i class="fa fa-level-up font-bold text-navy"></i>
-                                <small>Switch devices</small>
+                        	<li><a href="{% url 'switch_list' %}">Switch devices</a></li>		
                             </div>
                          <div class="col-xs-7 content">
-                                <h1 class="no-margins text-navy">{{ router_list.count }}</h1>
-                                <i class="fa fa-level-up font-bold text-navy"></i>
-                                <small>Other devices</small>
+                        	<li><a href="{% url 'other_list' %}">Other devices</a></li>		
                             </div>
                         </div>
                     </div>
