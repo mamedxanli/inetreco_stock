@@ -33,11 +33,11 @@
                                 <h1 class="m-b-xs"><i class="icon-custom fa fa-sitemap"></i></h2>
                                 {% if object.file_picture_1 %}
                                     <h3 class="m-b-xs"><span>Front Picture</span><span class="text-navy"></span></h3>
-                                    <a href="{{ object.file_picture_1.url }}" download><img src='{{ object.file_picture_1.url}}' height='50' width='50' border='1'/></a>
+                                    <a href="{{ object.file_picture_1.url }}" download><img src='{{ object.file_picture_1.url}}' height='50' width='100' border='1'/></a>
                                 {% endif %}
                                 {% if object.file_picture_2 %}
                                     <h3 class="m-b-xs"><span>Back Picture</span><span class="text-navy"></span></h3>
-                                    <a href="{{ object.file_picture_2.url }}" download><img src='{{ object.file_picture_2.url}}' height='50' width='50' border='1'/></a>
+                                    <a href="{{ object.file_picture_2.url }}" download><img src='{{ object.file_picture_2.url}}' height='50' width='100' border='1'/></a>
                                 {% endif %}
                                 {% if object.file_other %}
                                     <h3 class="m-b-xs"><span>Other files: </span><span class="text-navy"><a href="{{ object.file_other.url }}" download>Download</a></span></h3>
@@ -50,7 +50,7 @@
             <h2 class="m-b-xs">Details</h2>
             <h3 class="m-b-xs">{{ object.other }}</h3>
                                 <div class="hr-line-dashed"></div>
-            <h2 class="m-b-xs"><a href="http://www.inetreco.com/contact.html">Order</a></h2>
+            <h2 class="m-b-xs"><a href="http://www.inetreco.com/contact.html">Request quote:</a></h2>
         </div>
     </div>
 </div>

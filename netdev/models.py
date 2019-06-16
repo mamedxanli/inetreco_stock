@@ -33,7 +33,7 @@ class Netdev(models.Model):
     other = models.TextField("Notes", max_length=2000)
 
     def __str__(self):
-        return "{} {}".format(self.device_type, self.netdev_model)
+        return "{}".format(self.netdev_model)
 
     def get_absolute_url(self):
         """
