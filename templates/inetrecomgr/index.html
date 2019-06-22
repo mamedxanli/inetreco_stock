@@ -45,16 +45,7 @@
                     <div class="ibox-content">
                         <div class="row">
                             <div class="col-xs-7 content">
-                                <li><a href="{% url 'router_list' %}">Router</a></li>
-                            </div>
-                         <div class="col-xs-7 content">
-                                <li><a href="{% url 'firewall_list' %}">Firewall</a></li>
-                            </div>
-                         <div class="col-xs-7 content">
-                                <li><a href="{% url 'switch_list' %}">Switch</a></li>        
-                            </div>
-                         <div class="col-xs-7 content">
-                                <li><a href="{% url 'other_list' %}">Other</a></li>        
+                                <li><a href="{% url 'juniper_list' %}">Juniper</a></li>
                             </div>
                         </div>
                     </div>
@@ -67,21 +58,29 @@
             <div class="col-lg-offset-2 col-lg-8">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
+                        <h5>Fortigate devices</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="row">
+                            <div class="col-xs-7 content">
+                                <li><a href="{% url 'fortigate_list' %}">Fortigate</a></li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+     <div class="row">
+            <div class="col-lg-offset-2 col-lg-8">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
                         <h5>Other devices</h5>
                     </div>
                     <div class="ibox-content">
                         <div class="row">
                             <div class="col-xs-7 content">
-                                <li><a href="{% url 'router_list' %}">Router</a></li>
-                            </div>
-                         <div class="col-xs-7 content">
-                                <li><a href="{% url 'firewall_list' %}">Firewall</a></li>
-                            </div>
-                         <div class="col-xs-7 content">
-                                <li><a href="{% url 'switch_list' %}">Switch</a></li>        
-                            </div>
-                         <div class="col-xs-7 content">
-                                <li><a href="{% url 'other_list' %}">Other</a></li>        
+                                <li><a href="{% url 'other_devices_list' %}">Other</a></li>
                             </div>
                         </div>
                     </div>

@@ -28,10 +28,15 @@
             <li>
                 <a href="#"><i class="fa fa-sitemap"></i> <span class="nav-label">Juniper devices</span><span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level collapse">
-                    <li><a href="{% url 'router_list' %}">Router</a></li>
-                    <li><a href="{% url 'switch_list' %}">Switch</a></li>
-                    <li><a href="{% url 'firewall_list' %}">Firewall</a></li>
-                    <li><a href="{% url 'other_list' %}">Other</a></li>
+                    <li><a href="{% url 'juniper_list' %}">Juniper</a></li>
+                </ul>
+            </li>
+
+
+            <li>
+                <a href="#"><i class="fa fa-sitemap"></i> <span class="nav-label">Fortigate devices</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="{% url 'fortigate_list' %}">Fortigate</a></li>
                 </ul>
             </li>
 
@@ -39,14 +44,10 @@
             <li>
                 <a href="#"><i class="fa fa-sitemap"></i> <span class="nav-label">Other devices</span><span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level collapse">
-                    <li><a href="{% url 'router_list' %}">Router</a></li>
-                    <li><a href="{% url 'switch_list' %}">Switch</a></li>
-                    <li><a href="{% url 'firewall_list' %}">Firewall</a></li>
-                    <li><a href="{% url 'other_list' %}">Other</a></li>
+                    <li><a href="{% url 'fortigate_list' %}">Other</a></li>
                 </ul>
             </li>
 
-     
         </ul>
     </div>
 </nav>

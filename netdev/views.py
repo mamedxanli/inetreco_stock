@@ -63,8 +63,42 @@ class OtherList(generic.ListView):
         return qs.order_by("pk")
 
 
+class JuniperList(generic.ListView):
+    """
+    List view for Juniper devices
+    """
+    model = Netdev
+    template_name = 'netdev/juniper_list.html'
+    paginate_by = 50
+
+    def get_queryset(self):
+        qs = Netdev.objects.filter(brand="Juniper")
+        return qs.order_by("pk")
+
+class FortigateList(generic.ListView):
+    """
+    List view for Fortigate devices
+    """
+    model = Netdev
+    template_name = 'netdev/fortigate_list.html'
+    paginate_by = 50
+
+    def get_queryset(self):
+        qs = Netdev.objects.filter(brand="Fortigate")
+        return qs.order_by("pk")
 
 
+class OtherDevicesList(generic.ListView):
+    """
+    List view for other devices
+    """
+    model = Netdev
+    template_name = 'netdev/other_devices_list.html'
+    paginate_by = 50
+
+    def get_queryset(self):
+        qs = Netdev.objects.filter(brand="Other")
+        return qs.order_by("pk")
 
 class NetdevDetail(generic.DetailView):
     """
