@@ -12,21 +12,21 @@
             <div class="col-lg-offset-2 col-lg-8">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
-                        <h5>Network devices</h5>
+                        <h5>Cisco devices</h5>
                     </div>
                     <div class="ibox-content">
                         <div class="row">
                             <div class="col-xs-7 content">
-                        	<li><a href="{% url 'router_list' %}">Router devices</a></li>		
+                        	<li><a href="{% url 'router_list' %}">Router</a></li>		
                             </div>
                          <div class="col-xs-7 content">
-                        	<li><a href="{% url 'firewall_list' %}">Firewall devices</a></li>		
+                        	<li><a href="{% url 'firewall_list' %}">Firewall</a></li>		
                             </div>
                          <div class="col-xs-7 content">
-                        	<li><a href="{% url 'switch_list' %}">Switch devices</a></li>		
+                        	<li><a href="{% url 'switch_list' %}">Switch</a></li>		
                             </div>
                          <div class="col-xs-7 content">
-                        	<li><a href="{% url 'other_list' %}">Other devices</a></li>		
+                        	<li><a href="{% url 'other_list' %}">Other</a></li>		
                             </div>
                         </div>
                     </div>
@@ -34,4 +34,59 @@
             </div>
         </div>
     </div>
+
+
+    <div class="row">
+            <div class="col-lg-offset-2 col-lg-8">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>Juniper devices</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="row">
+                            <div class="col-xs-7 content">
+                                <li><a href="{% url 'router_list' %}">Router</a></li>
+                            </div>
+                         <div class="col-xs-7 content">
+                                <li><a href="{% url 'firewall_list' %}">Firewall</a></li>
+                            </div>
+                         <div class="col-xs-7 content">
+                                <li><a href="{% url 'switch_list' %}">Switch</a></li>        
+                            </div>
+                         <div class="col-xs-7 content">
+                                <li><a href="{% url 'other_list' %}">Other</a></li>        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+     <div class="row">
+            <div class="col-lg-offset-2 col-lg-8">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>Other devices</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="row">
+                            <div class="col-xs-7 content">
+                                <li><a href="{% url 'router_list' %}">Router</a></li>
+                            </div>
+                         <div class="col-xs-7 content">
+                                <li><a href="{% url 'firewall_list' %}">Firewall</a></li>
+                            </div>
+                         <div class="col-xs-7 content">
+                                <li><a href="{% url 'switch_list' %}">Switch</a></li>        
+                            </div>
+                         <div class="col-xs-7 content">
+                                <li><a href="{% url 'other_list' %}">Other</a></li>        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 {% endblock %}
